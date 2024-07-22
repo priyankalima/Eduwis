@@ -1,4 +1,15 @@
+/* importing all css files */
+@import url('./header.css');
+@import url('./main.css');
+@import url('./footer.css');
+
 body{
     background:green;
     color:white;
+    box-sizing: border-box;
+    margin:0;
+}
+span{
+    font-size: 30px;
+    font-weight: 800;
 }

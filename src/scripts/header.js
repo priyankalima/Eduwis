@@ -1,7 +1,7 @@
 // creating element inside header
 header.appendChild(
     Object.assign(
-        document.createElement('h1'),
+        document.createElement('span'),
         {
             id:"heading",
             className:"heading",

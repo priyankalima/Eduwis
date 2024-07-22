@@ -1,6 +1,6 @@
 main.appendChild(
     Object.assign(
-        document.createElement('h1'),
+        document.createElement('span'),
         {
             innerHTML:"this is main page"
         }
