@@ -1,0 +1,1 @@
+eduwis- a scool student and teacher management platform.
