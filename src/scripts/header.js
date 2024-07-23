@@ -32,22 +32,22 @@ header.append(
                     })
                 })
                 // create toggle button and show only the max width is 600px
-                const media = window.matchMedia("(max-width: 600px)");
-                function myFunction(media) {
-                    if (media.matches) { // If media query matches
-                        toggleBtn.innerHTML = `
-                           <div></div>
-                           <div></div>
-                           <div></div>
-                        `
-                    }
-                }
-                myFunction(media);
-                media.addEventListener('change', () => {
-                    myFunction(media);
-                })
+                toggleBtn.innerHTML = `
+                <div></div>
+                <div></div>
+                <div></div>`
                 // hide and show the menu when the max width 600px
+                toggleBtn.addEventListener('click', () => {
 
+                    if (menuList.style.display === "block") {
+                        menuList.style.display = "none";
+                        console.log('its true')
+                    }
+                    else {
+                        menuList.style.display = "block"
+                        console.log('its false')
+                    }
+                })
             })
         }
     ),
