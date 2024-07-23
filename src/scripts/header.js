@@ -1,11 +1,16 @@
 // creating element inside header
 header.appendChild(
     Object.assign(
-        document.createElement('span'),
+        document.createElement('nav'),
         {
-            id:"heading",
-            className:"heading",
-            innerHTML:"this is header page",
+            id:"navbar",
+            className:"navbar",
+            innerHTML:`
+            <div class="logo">
+                 <img id="logoImg">
+            </div>
+            <div class="menu"></div>
+            `,
             // can be use eventlistener
             func:addEventListener('load',()=>{
                 // alert('hello world')
