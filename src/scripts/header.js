@@ -16,14 +16,39 @@ header.append(
                         <button>Book Free Demo</button>
                         <button>Parent Login</button>
                     </div>
-                    </div class="menu-list" id="menuList"></div>
+                    <div class="menu-list" id="menuList"></div>
                 </div>
             </div>
             `,
             // can be use eventlistener
             function: addEventListener('load', () => {
-                // alert('hello world')
-            }),
+                fetch('./content.json').then((res) => res.json()).then((data) => {
+                    const item = data.header;
+                    // add logo image
+                    logoImg.src = item.logo;
+                    // add menu lists
+                    item.menu.forEach(data => {
+                        menuList.innerHTML += `<a href="">${data}</a>`
+                    })
+                })
+                // create toggle button and show only the max width is 600px
+                const media = window.matchMedia("(max-width: 600px)");
+                function myFunction(media) {
+                    if (media.matches) { // If media query matches
+                        toggleBtn.innerHTML = `
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                        `
+                    }
+                }
+                myFunction(media);
+                media.addEventListener('change', () => {
+                    myFunction(media);
+                })
+                // hide and show the menu when the max width 600px
+
+            })
         }
     ),
     Object.assign(
