@@ -9,7 +9,7 @@ header.appendChild(
             <div class="logo">
                  <img id="logoImg">
             </div>
-            <div class="menu"></div>
+            <div class="menu">this is menu</div>
             `,
             // can be use eventlistener
             func:addEventListener('load',()=>{
