@@ -13,7 +13,7 @@ header.appendChild(
             `,
             // can be use eventlistener
             func:addEventListener('load',()=>{
-                // alert('hello world')
+                alert('hello world')
             }),
             // can be use on click function
             onclick:function(){
