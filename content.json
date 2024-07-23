@@ -1,0 +1,284 @@
+{
+    "header": {
+        "logo": "./src/assets/logo.svg",
+        "menu": [
+            "The Eduwis Promise",
+            "Modules",
+            "About Us",
+            "FAQ",
+            "Contact Us"
+        ],
+        "banner": [
+            {
+                "heading": "Eduwis: Smart Solution for Smart Schools",
+                "title": "Empowering Schools with Seamless ERP Solutions for a Brighter Tomorrow",
+                "para": "Transforming Education, Enhancing Wisdom. Eduwis simplifies school management, empowering educators, and inspiring students. Join us on the journey to redefine the future of education.",
+                "img": ""
+            },
+            {
+                "heading": "Eduwis: Navigating the Future of Education",
+                "title": "Revolutionize Your School with Intelligent ERP Solutions",
+                "para": "Empower your institution with Eduwis—a comprehensive solution designed to elevate administrative efficiency and foster a culture of continuous learning. Let's innovate together for a brighter educational future.",
+                "img": ""
+            },
+            {
+                "heading": "Eduwis: Where Efficiency Meets Education",
+                "title": "Effortless School Management, Exceptional Learning Experiences",
+                "para": "Discover the synergy of efficiency and education with Eduwis. Our seamless ERP solutions redefine school management, providing educators the tools they need and students the environment they deserve.",
+                "img": ""
+            },
+            {
+                "heading": "Eduwis: Pioneering the Future of Learning",
+                "title": "Transforming Schools into Centers of Excellence",
+                "para": "At Eduwis, we go beyond management—we envision excellence. Join the Eduwis community and be part of a transformative journey that reshapes education, fostering wisdom and success.",
+                "img": ""
+            }
+        ]
+    },
+    "main": {
+        "sectionOne": {
+            "title": "Why Choose Us?",
+            "heading": "The Eduwis Promise",
+            "para": "Explore the next era in school management with Eduwis. We unveil a comprehensive set of robust features designed for smooth administration and enriched learning experiences. Benefit from our user-friendly interface, adaptable pricing options, and dependable customer support, ensuring optimal value for your investment.",
+            "img": "",
+            "other": [
+                {
+                    "img": "",
+                    "title": "",
+                    "para": ""
+                },
+                {
+                    "img": "",
+                    "title": "",
+                    "para": ""
+                },
+                {
+                    "img": "",
+                    "title": "",
+                    "para": ""
+                },
+                {
+                    "img": "",
+                    "title": "",
+                    "para": ""
+                }
+            ]
+        },
+        "sectionTwo": {
+            "title": "Module Overview",
+            "para": "Comprehensive ERP Modules with role-based portal benefits, user-friendly dashboards and customization reports",
+            "module": [
+                {
+                    "name": "Academic",
+                    "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Administration",
+                    "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Finance",
+                    "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Human Resource",
+                    "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        }
+                    ]
+                },
+                {
+                    "name": "Communication",
+                    "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        "sectionThree": {
+            "title": "About Eduwis",
+            "heading": "Transforming Education with Innovative ERP Solutions",
+            "para": "At Eduwis, we believe in the power of education to shape a brighter future. Established with a vision to revolutionize the educational landscape, Eduwis is a leading provider of cutting-edge ERP solutions for schools.As we continue to evolve, Eduwis remains focused on adapting to the ever￾changing educational landscape. Discover the Eduwis advantage — where education meets innovation.",
+            "detail": [
+                {
+                    "name": "Our Origin",
+                    "para": "Eduwis emerged from a passion for advancing educational processes through technology. Understanding the evolving needs of modern educational institutions, we set out to create a comprehensive ERP solution that streamlines administration, enhances teaching methodologies, and empowers student learning."
+                },
+                {
+                    "name": "Our Core Team",
+                    "para": ""
+                },
+                {
+                    "name": "Our Commitment",
+                    "para": ""
+                }
+            ],
+            "img": ""
+        },
+        "sectionFour": {
+            "img": "",
+            "heading": "Discover the EDUWIS Advantage ",
+            "title": "Where Education Meets Innovation",
+            "para": "EDUWIS Mobile App ensures that almost all the necessary work related to school is done from anywhere and anytime with just a tap away."
+        },
+        "sectionFive": {
+            "title": "Do You Have Any Query?",
+            "faq": [
+                {
+                    "title": "What is Eduwis, and how does it benefit schools?",
+                    "content": ""
+                },
+                {
+                    "title": "What is Eduwis, and how does it benefit schools?",
+                    "content": ""
+                },
+                {
+                    "title": "What is Eduwis, and how does it benefit schools?",
+                    "content": ""
+                },
+                {
+                    "title": "What is Eduwis, and how does it benefit schools?",
+                    "content": ""
+                },
+                {
+                    "title": "What is Eduwis, and how does it benefit schools?",
+                    "content": ""
+                }
+            ]
+        },
+        "sectionSix": {
+            "title": "Stay Informed On Our Latest News",
+            "blog": [
+                {
+                    "img": "",
+                    "title": "",
+                    "para": "",
+                    "date": ""
+                }
+            ]
+        }
+    },
+    "footer": {
+        "logo": "",
+        "para": "",
+        "socialIcon": [
+            "../",
+            "",
+            ""
+        ],
+        "address": [
+            {
+                "icon": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "name": ""
+            },
+            {
+                "icon": "",
+                "name": ""
+            }
+        ]
+    }
+}

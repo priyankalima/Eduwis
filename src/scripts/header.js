@@ -1,24 +1,47 @@
 // creating element inside header
-header.appendChild(
+header.append(
     Object.assign(
         document.createElement('nav'),
         {
-            id:"navbar",
-            className:"navbar",
-            innerHTML:`
-            <div class="logo">
-                 <img id="logoImg">
+            id: "navbar",
+            className: "navbar",
+            innerHTML: `
+            <div class="container">
+                <div class="logo">
+                    <img id="logoImg" class="logo-img" alt="logo image">
+                    <div id="toggleBtn" class="toggle-btn"></div>
+                </div>
+                <div class="menu">
+                    <div class="cto-btn">
+                        <button>Book Free Demo</button>
+                        <button>Parent Login</button>
+                    </div>
+                    </div class="menu-list" id="menuList"></div>
+                </div>
             </div>
-            <div class="menu">this is menu</div>
             `,
             // can be use eventlistener
-            func:addEventListener('load',()=>{
-                alert('hello world')
+            function: addEventListener('load', () => {
+                // alert('hello world')
             }),
-            // can be use on click function
-            onclick:function(){
-                // alert('hii')
-            }
+        }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            id: "banner",
+            className: "banner",
+            innerHTML: `
+            <div class="container">
+                <div class="slider" id="slider">
+                    <div class="banner-title" id="bannerTitle">title</div>
+                    <div class="banner-img" id="bannerImg">image</div>
+                </div>
+            </div>
+            `,
+            function: addEventListener('load', () => {
+
+            })
         }
     )
 )
