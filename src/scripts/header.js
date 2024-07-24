@@ -38,8 +38,8 @@ header.append(
                 <div></div>`
                 // hide and show the menu when the max width 600px
                 toggleBtn.addEventListener('click', () => {
-
-                    if (menuList.style.display === "block") {
+                    // if the menulist is none show block 
+                    if (menuList.style.display === "block") { 
                         menuList.style.display = "none";
                         console.log('its true')
                     }
