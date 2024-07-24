@@ -7,13 +7,7 @@ const file = [
 // console.log(file);
 // fetch scripts inside body tag
 file.forEach(item =>{
-    // console.log(item)
-    document.body.appendChild(
-        Object.assign(
-            document.createElement('script'),
-            {
-                src:item
-            }
-        )
-    )
+    const script = document.createElement('script')
+    script.src = item;
+    document.body.appendChild(script)
 })

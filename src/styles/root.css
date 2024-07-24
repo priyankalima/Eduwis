@@ -1,11 +1,22 @@
 /* importing all css files */
+/* @import */
 @import url('./header.css');
 @import url('./main.css');
 @import url('./footer.css');
-
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
     box-sizing: border-box;
     margin: 0;
+}
+:root{
+    --primary-color : #FEDB27;
+    --secondary-color : #0239C7;
+    --light-color : #FFFFFF;
+    --dark-color :  #050329;
+    --bg-color : #D9D9D9;
+    --font-family: "Poppins", sans-serif;
+    --medium : 500;
 }
 /* container effect */
 .container {
@@ -25,22 +36,25 @@ body {
     display:flex;
     flex-direction: row;
 }
-.d-row-res{
+.d-row-rspn{
     display:flex;
     flex-direction: row;
-    @media only screen and (max-width:600px){
-        flex-direction: column;
-    }
 }
 /* flex-coloum */
 .d-col{
     display:flex;
     flex-direction: column;
 }
-.d-col-res{
+.d-col-rspn{
     display:flex;
     flex-direction: column;
     @media only screen and (max-width:600px){
         flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .d-row-rspn{
+        flex-direction: column;
     }
 }

@@ -9,9 +9,9 @@
         background: linear-gradient(90deg, rgba(234, 234, 234, 0) 0%, rgba(244, 244, 244, 0.55) 81.41%, rgba(255, 255, 255, 0) 100%);
         padding: 24px 0;
 
-        .d-row-res {
+        .d-row-rspn {
             justify-content: space-between;
-            gap:20px;
+            gap: 20px;
         }
 
         .logo {
@@ -33,22 +33,58 @@
                 div {
                     width: 30px;
                     height: 3px;
-                    background-color: black;
+                    background-color: var(--dark-color);
                     margin: 6px 0;
                 }
             }
         }
-
         .menu {
-            background: blue;
+            /* background: blue; */
+            display:flex !important;
+            align-items: end; 
+            padding:10px;
             gap:10px;
-            align-items: end;
-
-            .menu-list {}
+            flex-direction: column;
         }
-        .res-menu{
-            height:40vh;
-            background:green !important;
+        .rspn-menu {
+            height: auto;
+            display: flex !important;
+            gap: 10px;
+            align-items: start;
+            flex-direction: column-reverse;
+            /* background: green !important; */
+        }
+        .cto-btn{
+            display:flex;
+            gap:20px;
+            button:first-child{
+                background-color: var(--primary-color) ;
+                border:none;
+                padding:15px 25px;
+                border-radius: 5px;
+                color:var(--dark-color);
+                font-family: var(--font-family);
+                font-weight: var(--medium);
+                font-size: 14px;
+            }
+            button:last-child{
+                background-color: var(--secondary-color) ;
+                border:none;
+                padding:15px 25px;
+                border-radius: 5px;
+                color:var(--light-color);
+                font-family: var(--font-family);
+                font-weight: var(--medium);
+                font-size: 14px;
+            }
+        }
+        .menu-list{
+            display:flex;
+            flex-direction: row;
+            gap:20px;
+             @media only screen and (max-width:600px){
+                flex-direction: column;
+             }
         }
     }
 }
