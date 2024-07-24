@@ -15,3 +15,32 @@ body {
         width:90%;
     }
 }
+
+/* display flex */
+.d-flex{
+    display:flex;
+}
+/* flex row */
+.d-row{
+    display:flex;
+    flex-direction: row;
+}
+.d-row-res{
+    display:flex;
+    flex-direction: row;
+    @media only screen and (max-width:600px){
+        flex-direction: column;
+    }
+}
+/* flex-coloum */
+.d-col{
+    display:flex;
+    flex-direction: column;
+}
+.d-col-res{
+    display:flex;
+    flex-direction: column;
+    @media only screen and (max-width:600px){
+        flex-direction: row;
+    }
+}
