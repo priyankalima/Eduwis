@@ -9,7 +9,11 @@ header.append(
             <div class="container d-row-rspn">
                 <div class="logo d-flex">
                     <img id="logoImg" class="logo-img" alt="logo image">
-                    <div id="toggleBtn" class="toggle-btn"></div>
+                    <div id="toggleBtn" class="toggle-btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
                 <div id="menu">
                     <div class="cto-btn">
@@ -31,12 +35,8 @@ header.append(
                         menuList.innerHTML += `<a href="">${data}</a>`
                     })
                 })
-                // create toggle button and show only the max width is 600px
-                toggleBtn.innerHTML = `
-                <div></div>
-                <div></div>
-                <div></div>`
                 // menu and resmenu when the media is max wifth 600px then dhow resmenu else menu
+                const media = window.matchMedia("(max-width: 600px)")
                 function myFunction(x) {
                     if (x.matches) {
                         // menu.classList.add('res-menu')
@@ -48,14 +48,11 @@ header.append(
                         menu.style.display = "block"
                     }
                 }
-                // Create a MediaQueryList object
-                const media = window.matchMedia("(max-width: 600px)")
-                // Call the match function at run time
                 myFunction(media);
-                // Add the match function as a listener for state changes
                 media.addEventListener("change", function () {
                     myFunction(media);
                 });
+
                 // hide and show the menu
                 toggleBtn.addEventListener('click', () => {
                     if (menu.classList.contains('rspn-menu')) {
@@ -79,7 +76,7 @@ header.append(
             className: "banner",
             innerHTML: `
             <div class="container">
-                <div class="slider" id="slider">
+                <div class="slider d-flex" id="slider">
                     <div class="banner-title" id="bannerTitle">title</div>
                     <div class="banner-img" id="bannerImg">image</div>
                 </div>

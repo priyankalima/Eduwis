@@ -25,7 +25,7 @@
             .toggle-btn {
                 display: none;
 
-                @media only screen and (max-width:600px) {
+                @media (max-width:600px) {
                     display: block;
                     cursor: pointer;
                 }
@@ -92,7 +92,7 @@
                 letter-spacing: 0.02em;
                 color: var(--dark-color);
             }
-             @media only screen and (max-width:600px){
+             @media (max-width:600px){
                 flex-direction: column;
                 gap:10px;
              }
