@@ -116,11 +116,13 @@ header.append(
                     // contents[i].style.display = "none"
                     tabs[i].addEventListener('click',()=>{
                         // alert('clicked')
-                        console.log(contents[i].offsetLeft)
+                        console.log(contents[i].offsetWidth)
                         const chekcLeft = contents[i].offsetLeft;
                         if(document.getElementById('tab'+ i).checked){
                             contents[i].style.marginLeft =  -chekcLeft + "px";
+                            // contents[i].style.marginRight =  chekcLeft + "px";
                         }
+                        
                     })
                 }
                  

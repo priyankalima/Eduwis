@@ -108,7 +108,7 @@
         .carousel-content{
             width:100%;
             display:flex;
-            overflow:scroll;
+            overflow:auto;
             /* position: relative; */
             /* scroll-snap-type:x-mandtory; */
             scroll-snap-align: center;
@@ -116,7 +116,7 @@
                 width:100%;
                 height:40vh;
                 background:blue;
-                flex-shrink: 0;
+                flex-shrink: 0;;
                 /* display:none; */
             }
             .carousel:nth-child(1){
