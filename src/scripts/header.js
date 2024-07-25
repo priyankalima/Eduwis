@@ -74,11 +74,15 @@ header.append(
         {
             id: "banner",
             className: "banner",
+            innerHTML:`
+             <div class="carousel-content" id="carouselContent"></div>
+             <div class="carousel-control" id="carouselControl"></div>
+            `,
             function: addEventListener('load', () => {
                 // create carouse content
                      for(let i = 0; i < 4; i++){
-                        banner.innerHTML += `
-                        <div class="carousel-content">
+                        carouselContent.innerHTML += `
+                        <div class="carousel">
                             <div class="container">
                                 <div class="carousel-item d-flex" id="carouselItem">
                                     <div class="banner-title" id="bannerTitle">title</div>
@@ -89,13 +93,13 @@ header.append(
                         `
                      }
                     // create 4 buttons
-                    // for(let i= 0; i< 4 ; i++){
-                    //     banner.innerHTML += `
-                    //         <input type="radio" name="tab" id=${i}>
-                    //         <label for=${i}></label>
+                    for(let i= 0; i< 4 ; i++){
+                        carouselControl.innerHTML += `
+                            <input type="radio" name="tab" id=${i}>
+                            <label for=${i}>${i}</label>
                         
-                    //     `
-                    // }
+                        `
+                    }
             })
         }
     )

@@ -103,16 +103,29 @@
         width:100%;
         height:auto;
         background:green;
-        display:flex;
-        overflow: scroll;
         position: relative;
-        /* scroll-snap-type:x-mandtory; */
-        scroll-snap-align: center;
         .carousel-content{
             width:100%;
-            height:40vh;
-            background:blue;
-            flex-shrink: 0;
+            display:flex;
+            overflow: scroll;
+            /* position: relative; */
+            /* scroll-snap-type:x-mandtory; */
+            scroll-snap-align: center;
+            .carousel{
+                width:100%;
+                height:40vh;
+                background:blue;
+                flex-shrink: 0;
+            }
+        }
+        .carousel-control{
+            width:100%;
+            /* background:green; */
+            display:flex;
+            gap:5px;
+            justify-content: center;
+            position:absolute;
+            bottom:20px;
         }
     }
     .banner::-webkit-scrollbar{
