@@ -73,15 +73,15 @@ header.append(
         document.createElement('section'),
         {
             id: "banner",
-            className: "banner",
-            innerHTML:`
+            className: "banner d-flex",
+            innerHTML: `
              <div class="carousel-content" id="carouselContent"></div>
              <div class="carousel-control" id="carouselControl"></div>
             `,
             function: addEventListener('load', () => {
-                // create carouse content
-                     for(let i = 0; i < 4; i++){
-                        carouselContent.innerHTML += `
+                // create carousel content
+                for (let i = 0; i < 4; i++) {
+                    carouselContent.innerHTML += `
                         <div class="carousel">
                             <div class="container">
                                 <div class="carousel-item d-flex" id="carouselItem">
@@ -91,15 +91,40 @@ header.append(
                             </div>
                         </div>
                         `
-                     }
-                    // create 4 buttons
-                    for(let i= 0; i< 4 ; i++){
-                        carouselControl.innerHTML += `
-                            <input type="radio" name="tab" id=${i}>
-                            <label for=${i}>${i}</label>
-                        
+                }
+                // create 4 buttons
+                for (let i = 0; i < 4; i++) {
+                    carouselControl.innerHTML += `
+                        <input type="radio" name="tab" id=${'tab' + i}>
+                        <label for=${'tab' + i} class="tab"></label>
                         `
-                    }
+                }
+                // first input should be check as default
+                document.getElementsByName('tab')[0].setAttribute ('checked',"checked")
+                // get all the tabs and content
+                const tabs = document.getElementsByName('tab');
+                console.log(tabs)
+                const contents = document.getElementsByClassName('carousel');
+                console.log(contents.length)
+                  
+                for(let i =0 ; i < tabs.length ; i++){
+                    console.log(tabs[i])
+                    // if(document.getElementById('tab'+ i).checked){
+                    //     console.log('tab'+ i + 'is checkde')
+                    // }
+                    console.log(contents);
+                    // contents[i].style.display = "none"
+                    tabs[i].addEventListener('click',()=>{
+                        // alert('clicked')
+                        console.log(contents[i].offsetLeft)
+                        const chekcLeft = contents[i].offsetLeft;
+                        if(document.getElementById('tab'+ i).checked){
+                            contents[i].style.marginLeft =  -chekcLeft + "px";
+                        }
+                    })
+                }
+                 
+
             })
         }
     )

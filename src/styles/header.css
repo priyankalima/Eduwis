@@ -104,10 +104,11 @@
         height:auto;
         background:green;
         position: relative;
+        align-content: center;
         .carousel-content{
             width:100%;
             display:flex;
-            overflow: scroll;
+            overflow:scroll;
             /* position: relative; */
             /* scroll-snap-type:x-mandtory; */
             scroll-snap-align: center;
@@ -116,16 +117,60 @@
                 height:40vh;
                 background:blue;
                 flex-shrink: 0;
+                /* display:none; */
+            }
+            .carousel:nth-child(1){
+                background:blue;
+            }
+            .carousel:nth-child(2){
+                background:pink;
+            }
+            .carousel:nth-child(3){
+                background:red;
+            }
+            .carousel:nth-child(4){
+                background:lime;
             }
         }
         .carousel-control{
-            width:100%;
-            /* background:green; */
+            /* width:100%; */
+            height:auto;
+            /* background:red; */
             display:flex;
-            gap:5px;
+            gap:20px;
             justify-content: center;
+            flex-direction: column;
             position:absolute;
-            bottom:20px;
+            bottom:0;
+            margin-bottom:11vh;
+            right:2pc;
+            
+             @media  only screen and (max-width:1200px){
+                display:none;
+             }
+            input{
+                display:none;
+            }
+            
+            label{
+                width:10px;
+                height:10px;
+                border:2px solid #f1f1f1;
+                border-radius: 50%;
+            }
+            /* input[type="radio"]:checked + label{
+                display:none;
+            } */
+            /* input[type="radio"]:checked ~ .carousel{
+                display:block;
+            } */
+            .active{
+                width:10px;
+                height:10px;
+                /* border:2px solid #f1f1f1; */
+                border-radius: 50%;
+                background:#f1f1f1;
+            }
         }
     }
     .banner::-webkit-scrollbar{
