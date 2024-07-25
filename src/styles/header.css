@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    height: 100vh;
+    height:auto;
 
     /* background:#ffffff; */
     .navbar {
@@ -97,5 +97,25 @@
                 gap:10px;
              }
         }
+    }
+
+    .banner{
+        width:100%;
+        height:auto;
+        background:green;
+        display:flex;
+        overflow: scroll;
+        position: relative;
+        /* scroll-snap-type:x-mandtory; */
+        scroll-snap-align: center;
+        .carousel-content{
+            width:100%;
+            height:40vh;
+            background:blue;
+            flex-shrink: 0;
+        }
+    }
+    .banner::-webkit-scrollbar{
+        display:none;
     }
 }
