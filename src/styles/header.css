@@ -109,25 +109,68 @@
             width:100%;
             display:flex;
             overflow:hidden;
-            
             /* scroll-snap-align: center; */
             .carousel{
                 width:100%;
-                height:40vh;
-                background:blue;
+                height:auto;
+                background:var(--light-color);
                 flex-shrink: 0;
-            }
-            .carousel:nth-child(1){
-                background:blue;
-            }
-            .carousel:nth-child(2){
-                background:pink;
-            }
-            .carousel:nth-child(3){
-                background:red;
-            }
-            .carousel:nth-child(4){
-                background:lime;
+                padding:30px 0;
+                /* display: flex;
+                align-items: center; */
+                .d-row-rspn{
+                    align-items: center;
+                    align-content: center;
+                }
+                .banner-title{
+                    gap:20px;
+                    .heading{
+                        font-family: var(--font-family);
+                        font-weight: 700;
+                        font-size: 42px;
+                        letter-spacing: 0.02em;
+                        color: #0239c7;
+                    }
+                    .title{
+                        font-family: var(--font-family);
+                        font-weight: 600;
+                        font-size: 24px;
+                        color: rgba(5, 3, 41, 0.8);
+                    }
+                    .para{
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 179%;
+                        letter-spacing: 0.02em;
+                        color: rgba(5, 3, 41, 0.8);
+                    }
+                    button{
+                        width:30%;
+                        border:none;
+                        background:var(--primary-color);
+                        color:var(--dark-color);
+                        padding:15px 25px;
+                        border-radius: 5px;
+                        font-family: var(--font-family);
+                        font-weight: 500;
+                        font-size: 14px;
+
+                        @media only screen and (max-width:600px){
+                            width:50%;
+                        }
+                    }
+                }
+                .banner-img{
+                    img{
+                        width:100%;
+                    }
+                }
+                @media(max-width:600px){
+                    .d-row-rspn{
+                        flex-direction: column-reverse;
+                    }
+                }
             }
         }
         .carousel-control{
@@ -141,12 +184,12 @@
             position:absolute;
             z-index: 111;
             bottom:0;
-            margin-bottom:11vh;
+            margin-bottom:30vh;
             right:2pc;
             
              @media  only screen and (max-width:1200px){
                 right:auto;
-                margin-bottom:2vh;
+                margin-bottom:2vh ;
                 flex-direction: row;
                 width:100%;
              }
@@ -157,17 +200,24 @@
             label{
                 width:10px;
                 height:10px;
-                border:2px solid #f1f1f1;
+                border:2px solid #D9D9D9;
+                background:#D9D9D9;
                 border-radius: 50%;
                 cursor: pointer;
                 
             }
             input[type="radio"]:checked + label{
                 width:10px;
-                height:10px;
-                border:2px solid #f1f1f1;
-                border-radius: 50%;
-                background:green;
+                height:20px;
+                border:2px solid #0239C7;
+                border-radius: 20px;
+                background:#0239C7;
+
+                @media(max-width:600px){
+                    width:20px;
+                    height:auto;
+                    border-radius: 20px;
+                }
             }
             /* .active{
                 width:10px;

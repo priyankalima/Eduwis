@@ -87,12 +87,15 @@ header.append(
                     <div class="carousel">
                         <div class="container">
                             <div class="carousel-item d-row-rspn" id="carouselItem">
-                                <div class="banner-title" id="bannerTitle">
+                                <div class="banner-title d-col" id="bannerTitle">
                                   <span class="heading"> ${item.heading}</span>
                                   <span class="title">${item.title}</span>
                                   <span class="para">${item.para}</span>
+                                  <button>Get Started</button>
                                 </div>
-                                <div class="banner-img" id="bannerImg">image</div>
+                                <div class="banner-img" id="bannerImg">
+                                  <img src=${item.img}>
+                                </div>
                             </div>
                         </div>
                     </div>
