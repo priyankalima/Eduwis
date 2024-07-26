@@ -80,18 +80,26 @@ header.append(
             `,
             function: addEventListener('load', () => {
                 // create carousel content
-                for (let i = 0; i < 4; i++) {
+                fetch('./content.json').then(res=> res.json()).then((data)=>{
+                    // console.log(data)
+                   data.header.banner.forEach((item)=>{
                     carouselContent.innerHTML += `
-                        <div class="carousel">
-                            <div class="container">
-                                <div class="carousel-item d-flex" id="carouselItem">
-                                    <div class="banner-title" id="bannerTitle">title</div>
-                                    <div class="banner-img" id="bannerImg">image</div>
+                    <div class="carousel">
+                        <div class="container">
+                            <div class="carousel-item d-row-rspn" id="carouselItem">
+                                <div class="banner-title" id="bannerTitle">
+                                  <span class="heading"> ${item.heading}</span>
+                                  <span class="title">${item.title}</span>
+                                  <span class="para">${item.para}</span>
                                 </div>
+                                <div class="banner-img" id="bannerImg">image</div>
                             </div>
                         </div>
-                        `
-                }
+                    </div>
+                    `
+                   })
+                })
+                
                 // create 4 buttons
                 for (let i = 0; i < 4; i++) {
                     carouselControl.innerHTML += `
@@ -99,17 +107,15 @@ header.append(
                         <label for=${'tab' + i} id="label"></label>
                         `
                 }
-
+                // defind carousel tabs,content and manin carousel elemnt
                 const tabs = document.getElementsByName('tab');
                 const content = document.getElementsByClassName('carousel');
                 const element = document.getElementById("carouselContent");
-                console.log(document.getElementsByName('tab')[0])
+                // by default check the first input is checked
                 document.getElementsByName('tab')[0].checked = true;
                 // manual slider
                 tabs.forEach((t, i) => {
                     t.addEventListener('click', () => {
-                        // alert(`${i} is clicked`)
-                        // console.log(content[i])
                         if (document.getElementById('tab' + i).checked) {
                             const scrollPosition = content[i].offsetLeft;
                             element.scrollTo(scrollPosition, 0);
@@ -122,11 +128,10 @@ header.append(
                     counter++;
                     if (counter >= 4) {
                         counter = 0;
-                        console.log("true")
                     }
                     document.getElementById('tab' + counter).checked = true;
                     const scrollPosition = content[counter].offsetLeft;
-                    element.scrollTo(scrollPosition, 0);
+                    element.scrollTo(scrollPosition,0);
                 }, 5000)
 
             })

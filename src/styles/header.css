@@ -109,13 +109,13 @@
             width:100%;
             display:flex;
             overflow:hidden;
-            /* scroll-snap-type:x-mandtory; */
-            scroll-snap-align: center;
+            
+            /* scroll-snap-align: center; */
             .carousel{
                 width:100%;
                 height:40vh;
                 background:blue;
-                flex-shrink: 0;;
+                flex-shrink: 0;
             }
             .carousel:nth-child(1){
                 background:blue;
@@ -145,7 +145,10 @@
             right:2pc;
             
              @media  only screen and (max-width:1200px){
-                display:none;
+                right:auto;
+                margin-bottom:2vh;
+                flex-direction: row;
+                width:100%;
              }
             input{
                 display:none;
@@ -156,6 +159,7 @@
                 height:10px;
                 border:2px solid #f1f1f1;
                 border-radius: 50%;
+                cursor: pointer;
                 
             }
             input[type="radio"]:checked + label{
