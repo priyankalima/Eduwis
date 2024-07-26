@@ -139,5 +139,29 @@ header.append(
 
             })
         }
+    ),
+    Object.assign(
+        document.createElement('section'),
+        {
+            id:"info",
+            className:"info",
+            innerHTML:`
+            <svg width="317" class="left" height="304" viewBox="0 0 317 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M186.347 177.505C143.18 121.679 304 64.5095 275.5 -0.490479H-17V300.382C100.578 302.742 331.838 306.046 316.25 300.382C296.765 293.303 240.307 247.287 186.347 177.505Z" fill="#0E48DD" />
+            </svg>
+            <svg width="302" class="right" height="304" viewBox="0 0 302 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M130.653 125.514C173.82 181.34 13 238.51 41.5 303.51H334V2.63663C216.422 0.276855 -14.8383 -3.02686 0.750061 2.63663C20.2354 9.716 76.6931 55.7319 130.653 125.514Z" fill="#0E48DD" />
+            </svg>
+            <div class="container d-col">
+                <span class="info-title">Digitize Your School With Our Integrated Platform</span>
+                <form class="d-row-rspn">
+                   <input type="text" placeholder="Your Name">
+                   <input type="email" placeholder="Your Email">
+                   <input type="number" placeholder="Your Phone No.">
+                   <button type="submit">Submit</button>
+                </form>
+            </div>
+            `
+        }
     )
 )
