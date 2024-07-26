@@ -262,22 +262,22 @@
         "logo": "",
         "para": "",
         "socialIcon": [
-            "../",
-            "",
-            ""
+            "./src/assets/social-icons/facebook.svg",
+            "./src/assets/social-icons/instagram.svg",
+            "./src/assets/social-icons/linkedin.svg"
         ],
         "address": [
             {
-                "icon": "",
-                "name": ""
+                "icon": "./src/assets/address-icons/call.svg",
+                "name": "0124-4222616"
             },
             {
-                "icon": "",
-                "name": ""
+                "icon": "./src/assets/address-icons/email.svg",
+                "name": "info@eduwis.org"
             },
             {
-                "icon": "",
-                "name": ""
+                "icon": "./src/assets/address-icons/location.svg",
+                "name": "SIPL Building, Plot no. B1, Info Technology Park, Sector 34, Gurugram, Haryana 122004"
             }
         ]
     }
