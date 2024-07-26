@@ -96,36 +96,38 @@ header.append(
                 for (let i = 0; i < 4; i++) {
                     carouselControl.innerHTML += `
                         <input type="radio" name="tab" id=${'tab' + i}>
-                        <label for=${'tab' + i} class="tab"></label>
+                        <label for=${'tab' + i} id="label"></label>
                         `
                 }
-                // first input should be check as default
-                document.getElementsByName('tab')[0].setAttribute ('checked',"checked")
-                // get all the tabs and content
+
                 const tabs = document.getElementsByName('tab');
-                console.log(tabs)
-                const contents = document.getElementsByClassName('carousel');
-                console.log(contents.length)
-                  
-                for(let i =0 ; i < tabs.length ; i++){
-                    console.log(tabs[i])
-                    // if(document.getElementById('tab'+ i).checked){
-                    //     console.log('tab'+ i + 'is checkde')
-                    // }
-                    console.log(contents);
-                    // contents[i].style.display = "none"
-                    tabs[i].addEventListener('click',()=>{
-                        // alert('clicked')
-                        console.log(contents[i].offsetWidth)
-                        const chekcLeft = contents[i].offsetLeft;
-                        if(document.getElementById('tab'+ i).checked){
-                            contents[i].style.marginLeft =  -chekcLeft + "px";
-                            // contents[i].style.marginRight =  chekcLeft + "px";
+                const content = document.getElementsByClassName('carousel');
+                const element = document.getElementById("carouselContent");
+                console.log(document.getElementsByName('tab')[0])
+                document.getElementsByName('tab')[0].checked = true;
+                // manual slider
+                tabs.forEach((t, i) => {
+                    t.addEventListener('click', () => {
+                        // alert(`${i} is clicked`)
+                        // console.log(content[i])
+                        if (document.getElementById('tab' + i).checked) {
+                            const scrollPosition = content[i].offsetLeft;
+                            element.scrollTo(scrollPosition, 0);
                         }
-                        
                     })
-                }
-                 
+                })
+                // auto slider
+                let counter = 0;
+                setInterval(() => {
+                    counter++;
+                    if (counter >= 4) {
+                        counter = 0;
+                        console.log("true")
+                    }
+                    document.getElementById('tab' + counter).checked = true;
+                    const scrollPosition = content[counter].offsetLeft;
+                    element.scrollTo(scrollPosition, 0);
+                }, 5000)
 
             })
         }
