@@ -178,9 +178,12 @@
                 }
 
                 .banner-img {
+                    text-align: center;
                     img {
-                        width: 100%;
+                        width: 200px;
+                        height:200px
                     }
+                    
                 }
 
                 @media(max-width:600px) {
