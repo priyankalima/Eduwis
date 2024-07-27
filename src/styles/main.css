@@ -15,6 +15,7 @@
             }
         }
         .left-content{
+            gap:10px;
             .title{
                 font-family: var(--font-family);
                 font-weight: 600;
@@ -35,6 +36,18 @@
                 line-height: 179%;
                 letter-spacing: 0.02em;
                 color: rgba(5, 3, 41, 0.8);
+            }
+            button{
+                margin-top:1pc;
+                width:55%;
+                background: #fedb27;
+                padding:15px;
+                border:none;
+                border-radius: 5px;
+                font-family: var(--font-family);
+                font-weight: 500;
+                font-size: 14px;
+                color: #050329;
             }
         }
         .right-image{

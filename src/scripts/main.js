@@ -15,6 +15,7 @@ main.append(
                     <span class="title">${item.title}</span>
                     <span class="heading">${item.heading}</span>
                     <span class="para">${item.para}</span>
+                    <button>Request for free Demo </button>
                     `
                     rightImage.innerHTML +=`
                     <img src=${item.img}>
