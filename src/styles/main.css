@@ -104,13 +104,13 @@
             .left{
                 left:5.8pc;
                 @media(max-width:600px){
-                    left:0
+                    display:none
                 }
             }
             .right{
                 right:5.8pc;
                 @media(max-width:600px){
-                    right:0
+                    display: none;
                 }
             }
         }
