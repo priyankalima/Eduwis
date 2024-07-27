@@ -3,7 +3,6 @@
     height: auto;
     position:relative;
 
-    /* background:#ffffff; */
     .navbar {
         width: 100%;
         height: auto;
@@ -241,7 +240,7 @@
 
             @media only screen and (max-width:1200px) {
                 right: auto;
-                margin-bottom: 5vh;
+                margin-bottom: 3vh;
                 flex-direction: row;
                 width: 100%;
             }
@@ -275,9 +274,6 @@
             }
         }
     }
-    /* .banner::-webkit-scrollbar{
-        display:none;
-    } */
     .info {
         width: 100%;
         height: auto;
