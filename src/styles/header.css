@@ -155,7 +155,7 @@
                         font-size: 24px;
                         color: rgba(5, 3, 41, 0.8);
                         @media(max-width:600px){
-                            font-size: 18px;
+                            font-size: 20px;
                      }
                     }
 
