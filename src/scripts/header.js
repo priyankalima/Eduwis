@@ -92,7 +92,9 @@ header.append(
                         <div class="container">
                             <div class="carousel-item d-row-rspn" id="carouselItem">
                                 <div class="banner-title d-col" id="bannerTitle">
-                                  <span class="heading"> ${item.heading}</span>
+                                  <span class="heading">
+                                  <span style="color:var(--secondary-color) !important;">Eduwis:</span> 
+                                  ${item.heading}</span>
                                   <span class="title">${item.title}</span>
                                   <span class="para">${item.para}</span>
                                   <button>Get Started</button>
