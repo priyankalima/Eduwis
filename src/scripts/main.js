@@ -88,7 +88,39 @@ main.append(
     Object.assign(
         document.createElement('section'),
         {
-            innerHTML:"this is section two"
+            innerHTML:`
+            <div class="container">
+                <div class="top-title d-col">
+                     <span>Module Overview</span>
+                     <span>Comprehensive ERP Modules with role-based portal benefits, user-friendly 
+                     dashboards and customization reports
+                     </span>
+                </div>
+                <div class="bottom-content" id="bottomContent">
+                
+                </div>
+            </div>
+            `,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=>res.json()).then(data=>{
+                    data.main.sectionTwo.module.forEach((item,i) => {
+                        bottomContent.innerHTML += `
+                          <input type="radio" id=${'moduletab' + i} name="moduleTab" >
+                          <label for=${'moduletab' + i}>${item.name}</label>
+                          <div class="tab-content ">
+                            <div class="content-container">
+                            ${
+                                item.list.map(data =>{
+                                    return`<div class="content-items">contents </div>`
+                                }).join("")
+                            }
+                            </div>
+                          </div>
+                        `
+                    });
+                    document.getElementsByName('moduleTab')[0].checked = true;
+                })
+            })
         } 
     ),
     Object.assign(

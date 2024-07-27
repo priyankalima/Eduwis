@@ -69,12 +69,13 @@
             "para": "Comprehensive ERP Modules with role-based portal benefits, user-friendly dashboards and customization reports",
             "module": [
                 {
+                    "id":"tab1",
                     "name": "Academic",
                     "list": [
                         {
                             "icon": "",
-                            "name": "",
-                            "para": ""
+                            "name": "Examinations",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
                             "icon": "",
@@ -94,6 +95,7 @@
                     ]
                 },
                 {
+                    "id":"tab2",
                     "name": "Administration",
                     "list": [
                         {
@@ -115,10 +117,21 @@
                             "icon": "",
                             "name": "",
                             "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
                         }
                     ]
                 },
                 {
+                    "id":"tab3",
                     "name": "Finance",
                     "list": [
                         {
@@ -140,10 +153,16 @@
                             "icon": "",
                             "name": "",
                             "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
                         }
                     ]
                 },
                 {
+                    "id":"tab4",
                     "name": "Human Resource",
                     "list": [
                         {
@@ -165,12 +184,33 @@
                             "icon": "",
                             "name": "",
                             "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
                         }
                     ]
                 },
                 {
+                    "id":"tab5",
                     "name": "Communication",
                     "list": [
+                        {
+                            "icon": "",
+                            "name": "",
+                            "para": ""
+                        },
                         {
                             "icon": "",
                             "name": "",
