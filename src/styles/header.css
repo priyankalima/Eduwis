@@ -127,6 +127,7 @@
         align-content: center;
         padding:30px 0;
         padding-top: 10pc;
+        /* background:green; */
         @media(max-width:600px){
             padding-top:5pc;
            }
@@ -134,12 +135,11 @@
             width: 100%;
             display: flex;
             overflow: hidden;
-
             /* scroll-snap-align: center; */
             .carousel {
                 width: 100%;
                 height: auto;
-                background: var(--light-color);
+                /* background: green; */
                 flex-shrink: 0;
                 padding: 30px 0;
 
@@ -151,11 +151,11 @@
                 }
 
                 .banner-title {
-                    /* background:green; */
-                    margin:50px 0;
+                    /* background:red; */
                     gap: 20px;
                     @media(max-width:600px){
                         gap:10px;
+                        margin-top:50px;
                     }
 
                     .heading {
@@ -241,7 +241,7 @@
 
             @media only screen and (max-width:1200px) {
                 right: auto;
-                margin-bottom: 2vh;
+                margin-bottom: 5vh;
                 flex-direction: row;
                 width: 100%;
             }
@@ -284,6 +284,9 @@
         background: #0239C7;
         position: relative;
         padding: 6pc 0;
+        @media(max-width:600px){
+            padding:3pc 0;
+        }
 
         .left {
             position:absolute;
