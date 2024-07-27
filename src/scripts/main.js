@@ -12,9 +12,12 @@ main.append(
                 fetch('./content.json').then(res=>res.json()).then((data)=>{
                     const item = data.main.sectionOne;
                     leftContent.innerHTML += `
-                    <span>${item.title}</span>
-                    <span>${item.heading}</span>
-                    <span>${item.para}</span>
+                    <span class="title">${item.title}</span>
+                    <span class="heading">${item.heading}</span>
+                    <span class="para">${item.para}</span>
+                    `
+                    rightImage.innerHTML +=`
+                    <img src=${item.img}>
                     `
                 })
             })

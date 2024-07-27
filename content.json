@@ -40,7 +40,7 @@
             "title": "Why Choose Us?",
             "heading": "The Eduwis Promise",
             "para": "Explore the next era in school management with Eduwis. We unveil a comprehensive set of robust features designed for smooth administration and enriched learning experiences. Benefit from our user-friendly interface, adaptable pricing options, and dependable customer support, ensuring optimal value for your investment.",
-            "img": "",
+            "img": "./src/assets/images/image.svg",
             "other": [
                 {
                     "img": "",
