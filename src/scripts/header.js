@@ -66,6 +66,10 @@ header.append(
                         menu.style.display = "block";
                     }
                 })
+                // active humburger nav
+                toggleBtn.addEventListener('click',()=>{
+                    toggleBtn.classList.toggle('toggle-nav')
+                })
             })
         }
     ),
