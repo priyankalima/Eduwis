@@ -158,6 +158,10 @@ main.append(
                          }
                     </div>
                     `
+                    document.getElementsByName('abouttab')[0].checked = true;
+                    aboutRightContent.innerHTML = `
+                    <img src=${item.img}>
+                    `
                 })
             })
         } 

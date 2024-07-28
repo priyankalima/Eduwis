@@ -232,6 +232,12 @@
         background:#F9F9F9;
         height:auto;
         padding:3pc 0;
+        .d-flex{
+            gap:20px;
+           @media(max-width:600px){
+            flex-direction: column-reverse;
+           }
+        }
         .left-content{
             .title{
                 font-family: var(--font-family);
@@ -296,6 +302,13 @@
             }
             input[type="radio"]:checked + label + p{
                 display:block;
+            }
+        }
+        .right-image{
+            img{
+                @media(max-width:600px){
+                    width:100%;
+                }
             }
         }
     }
