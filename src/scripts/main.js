@@ -1,4 +1,5 @@
 main.append(
+
     Object.assign(
         document.createElement('section'),
         { 
@@ -131,7 +132,34 @@ main.append(
     Object.assign(
         document.createElement('section'),
         {
-            innerHTML:"this is section three"
+            innerHTML:`
+            <div class="container d-flex">
+                 <div class="left-content d-col" id="aboutLeftContent"></div>
+                 <div class="right-image" id="aboutRightContent"></div>
+            </div>
+            `,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.main.sectionThree
+                    console.log(item);
+                    aboutLeftContent.innerHTML = `
+                    <span class="title">${item.title}</span>
+                    <span class="heading">${item.heading}</span>
+                    <span class="para">${item.para}</span>
+                    <div class="tabs">
+                         ${
+                            item.detail.map((data,i)=>{
+                                return`
+                                <input type="radio" name="abouttab" id=${'abouttab' + i}>
+                                <label for=${'abouttab' + i}>${data.name}</label>
+                                <p>${data.para}</p>
+                                `
+                            }).join("")
+                         }
+                    </div>
+                    `
+                })
+            })
         } 
     ),
     Object.assign(
