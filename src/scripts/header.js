@@ -164,7 +164,7 @@ header.append(
                    <input type="text" placeholder="Your Name">
                    <input type="email" placeholder="Your Email">
                    <input type="number" placeholder="Your Phone No.">
-                   <button type="submit">Submit</button>
+                   <button type="submit">Book A Demo</button>
                 </form>
             </div>
             `

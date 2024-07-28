@@ -52,6 +52,9 @@
                 font-weight: 500;
                 font-size: 14px;
                 color: #050329;
+                @media(max-width:600px){
+                    width:60%;
+                }
             }
         }
         .right-image{
@@ -149,6 +152,10 @@
             width:100%;
             justify-content: center;
             gap:10px;
+            @media(max-width:600px){
+                flex-wrap:nowrap;
+                flex-direction: column;
+            }
             input{
                 display:none;
             }
@@ -163,6 +170,7 @@
                 line-height: 179%;
                 letter-spacing: 0.02em;
                 color: #050329;
+                text-align: center;
             }
             input[type="radio"]:checked + label{
                 color:var(--light-color);
@@ -173,7 +181,10 @@
                 order:1;
                 width:100%;
                 display:none;
-                margin-top: 20px;;
+                margin-top: 20px;
+                @media(max-width: 600px){
+                    order:0;
+                }
             }
             input[type="radio"]:checked + label + .tab-content{
                 display:block;
