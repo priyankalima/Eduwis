@@ -96,9 +96,7 @@ main.append(
                      dashboards and customization reports
                      </span>
                 </div>
-                <div class="bottom-content" id="bottomContent">
-                
-                </div>
+                <div class="bottom-content" id="bottomContent"></div>
             </div>
             `,
             function:addEventListener('load',()=>{
@@ -111,7 +109,14 @@ main.append(
                             <div class="content-container">
                             ${
                                 item.list.map(data =>{
-                                    return`<div class="content-items">contents </div>`
+                                    return`
+                                    <div class="content-items">
+                                         <div class="d-flex">
+                                            <img src=${data.icon}>
+                                            <span>${data.name}</psna>
+                                         </div>
+                                         <p>${data.para}</p>
+                                    </div>`
                                 }).join("")
                             }
                             </div>

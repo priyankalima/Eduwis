@@ -181,7 +181,7 @@
                 order:1;
                 width:100%;
                 display:none;
-                margin-top: 20px;
+                margin: 20px 0;
                 @media(max-width: 600px){
                     order:0;
                 }
@@ -195,14 +195,33 @@
                 gap:20px;
                 /* background:green; */
                 .content-items{
-                    width:30%;
-                    padding:10px;
-                    height:300px;
+                    width:20%;
+                    padding:17px;
+                    height:200px;
                     background:#ffffff;
                     border-radius: 10px;
                     @media(max-width:600px){
                         flex-grow: 1;
                         flex-basis: 300px;
+                    }
+                    .d-flex{
+                        align-items: center;
+                        align-content: center;
+                        gap:10px;
+                        span{
+                            font-family: var(--font-family);
+                            font-weight: 600;
+                            font-size: 14px;
+                            color: #050329;
+                        }
+                    }
+                    p{
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 179%;
+                        letter-spacing: 0.02em;
+                        color: rgba(5, 3, 41, 0.7);
                     }
                 }
                 

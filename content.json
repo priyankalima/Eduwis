@@ -73,24 +73,24 @@
                     "name": "Academic",
                     "list": [
                         {
-                            "icon": "",
+                            "icon": "./src/assets/module-icons/icon-1.svg",
                             "name": "Examinations",
                             "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-2.svg",
+                            "name": "Lesson Plan",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-3.svg",
+                            "name": "Homework",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-4.svg",
+                            "name": "Attendance",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         }
                     ]
                 },
@@ -99,34 +99,49 @@
                     "name": "Administration",
                     "list": [
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-5.svg",
+                            "name": "Library",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-6.svg",
+                            "name": "Certficate",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-7.svg",
+                            "name": "Report Card",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-8.svg",
+                            "name": "Online Learning",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-9.svg",
+                            "name": "Timetable",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-10.svg",
+                            "name": "Multi-Branch Report",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-11.svg",
+                            "name": "Student Information",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-12.svg",
+                            "name": "Inventory",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-13.svg",
+                            "name": "Transport",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         }
                     ]
                 },
@@ -135,29 +150,24 @@
                     "name": "Finance",
                     "list": [
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-14.svg",
+                            "name": "Fee Management",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-15.svg",
+                            "name": "Bank Payments",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-16.svg",
+                            "name": "Expense Repor:",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
-                        },
-                        {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-17.svg",
+                            "name": "Payroll Management",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         }
                     ]
                 },
@@ -166,39 +176,29 @@
                     "name": "Human Resource",
                     "list": [
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-18.svg",
+                            "name": "Front Office",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-19.svg",
+                            "name": "Admission Enquiry",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-20.svg",
+                            "name": "Visitor Book",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-21.svg",
+                            "name": "Circulars",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
-                        },
-                        {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
-                        },
-                        {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-22.svg",
+                            "name": "Email / SMS",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         }
                     ]
                 },
@@ -207,29 +207,24 @@
                     "name": "Communication",
                     "list": [
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-23.svg",
+                            "name": "Leave & Attendance",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-24.svg",
+                            "name": "Task Management",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-25.svg",
+                            "name": "Staff Directory",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         },
                         {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
-                        },
-                        {
-                            "icon": "",
-                            "name": "",
-                            "para": ""
+                            "icon": "./src/assets/module-icons/icon-26.svg",
+                            "name": "Recruitment",
+                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
                         }
                     ]
                 }
