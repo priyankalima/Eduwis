@@ -225,6 +225,7 @@ main.append(
                         </div>
                       `
                     })
+                    document.getElementsByName('accordion')[0].checked = true;
                   })
             })
         } 
