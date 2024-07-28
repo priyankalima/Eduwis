@@ -196,7 +196,37 @@ main.append(
     Object.assign(
         document.createElement('section'),
         {
-            innerHTML:"this is section five"
+            innerHTML:`
+            <div class="container d-col">
+                 <div class="section-05-top d-col" id="section05Top"></div>
+                 <div class="section-05-bottom" id="section05Bottom"></div>
+            </div>
+            `,
+            function:addEventListener('load',()=>{
+                  fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.main.sectionFive;
+                    section05Top.innerHTML = `
+                    <span class="title">FAQ</span>
+                    <span class="heading">${item.title}</span>
+                    `
+                    item.faq.forEach((elmnt,i)=>{
+                        section05Bottom.innerHTML += `
+                        <div class="accordion">
+                            <input type="radio" name="accordion" id=${'accordion' + i}>
+                            <label for=${'accordion' + i}>
+                               <span class="title">${elmnt.title}</span>
+                               <span class="arrow">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7929 14C16.2383 14 16.4614 13.4614 16.1464 13.1464L12.3536 9.35355C12.1583 9.15829 11.8417 9.15829 11.6464 9.35355L7.85355 13.1464C7.53857 13.4614 7.76165 14 8.20711 14H15.7929Z" fill="#0239C7" />
+                                    </svg>
+                               </span>
+                            </label>
+                            <div class="content">${elmnt.content}</div>
+                        </div>
+                      `
+                    })
+                  })
+            })
         } 
     ),
     Object.assign(
