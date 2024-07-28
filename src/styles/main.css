@@ -494,8 +494,7 @@
                 padding: 10px 20px;
                 /* border-radius: 5px; */
                 display: flex;
-                align-items: center;
-                align-content: center;
+                align-items: start;
                 cursor: pointer;
                 /* gap:10px; */
             }
