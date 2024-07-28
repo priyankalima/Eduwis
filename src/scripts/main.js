@@ -169,7 +169,28 @@ main.append(
     Object.assign(
         document.createElement('section'),
         {
-            innerHTML:"this is section four"
+            innerHTML:`
+            <div class="container d-flex">
+                 <div class="section-04-left-image" id="section04LeftImage"></div>
+                 <div class="section-04-right-content d-col" id="section04RightContent"></div>
+            </div>`,
+            function:addEventListener('load',()=>{
+                fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.main.sectionFour;
+                    section04LeftImage.innerHTML =`
+                    <img src=${item.img}>
+                `
+                    section04RightContent.innerHTML =`
+                    <span class="heading">Discover the <span class="customize">EDUWIS</span> Advantage </span>
+                    <span class="title">${item.title}</span>
+                    <span class="para">${item.para}</span>
+                    <div class="store-link">
+                      <a><img src=${item.playstore}></a>
+                      <a><img src=${item.appstore}></a>
+                    </div>
+                    `
+                })
+            })
         } 
     ),
     Object.assign(

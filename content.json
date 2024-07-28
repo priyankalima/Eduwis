@@ -251,10 +251,12 @@
             "img": "./src/assets/images/dasboard-img.svg"
         },
         "sectionFour": {
-            "img": "",
+            "img": "./src/assets/images/mobile-img.svg",
             "heading": "Discover the EDUWIS Advantage ",
             "title": "Where Education Meets Innovation",
-            "para": "EDUWIS Mobile App ensures that almost all the necessary work related to school is done from anywhere and anytime with just a tap away."
+            "para": "EDUWIS Mobile App ensures that almost all the necessary work related to school is done from anywhere and anytime with just a tap away.",
+            "playstore":"./src/assets/images/playstore.svg",
+            "appstore":"./src/assets/images/appstore.svg"
         },
         "sectionFive": {
             "title": "Do You Have Any Query?",
