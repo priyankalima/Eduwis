@@ -196,7 +196,7 @@
                 padding: 15px 25px;
                 border-radius: 50px;
                 font-family: var(--font-family);
-                font-weight: 400;
+                font-weight: 600;
                 font-size: 14px;
                 line-height: 179%;
                 letter-spacing: 0.02em;
@@ -467,22 +467,25 @@
             border: none;
             border-radius: 5px;
             width: 80%;
-            margin:auto;
+            margin: auto;
             margin-top: 30px;
-            @media(max-width:600px){
-                border:1px solid #f1f1f1;
-                width:100%;
+
+            @media(max-width:600px) {
+                /* border:1px solid #f1f1f1; */
+                width: 100%;
             }
 
             .accordion {
                 display: flex;
                 flex-direction: column;
-                padding:20px 0;
+                padding: 20px 0;
                 border-bottom: 0.5px solid #f1f1f1;
                 cursor: pointer;
+                gap: 10px;
 
                 @media(max-width:600px) {
-                    width: 100%;
+                    /* width: 100%; */
+                    /* padding:0; */
                 }
             }
 
@@ -496,7 +499,12 @@
                 display: flex;
                 align-items: start;
                 cursor: pointer;
+
                 /* gap:10px; */
+                @media(max-width:600px) {
+                    /* width: 100%; */
+                    padding: 0;
+                }
             }
 
             .title {
@@ -519,6 +527,11 @@
                 line-height: 179%;
                 color: rgba(5, 3, 41, 0.8);
                 display: none;
+
+                @media(max-width:600px) {
+                    /* width: 100%; */
+                    padding: 0;
+                }
             }
 
             input[type="radio"]:checked+label+.content {
