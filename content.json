@@ -287,10 +287,22 @@
             "title": "Stay Informed On Our Latest News",
             "blog": [
                 {
-                    "img": "",
-                    "title": "",
+                    "img": "./src/assets/images/blog-images/img-1.svg",
+                    "title": "How to Choose the best Digital Marketing Agency",
                     "para": "",
-                    "date": ""
+                    "date": "23 Jan 2023"
+                },
+                {
+                    "img": "./src/assets/images/blog-images/img-2.svg",
+                    "title": "How digital changed Education?",
+                    "para": "",
+                    "date": "23 Jan 2023"
+                },
+                {
+                    "img": "./src/assets/images/blog-images/img-3.svg",
+                    "title": "How to make smarter educator?",
+                    "para": "",
+                    "date": "23 Jan 2023"
                 }
             ]
         }

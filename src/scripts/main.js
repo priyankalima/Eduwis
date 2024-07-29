@@ -233,7 +233,34 @@ main.append(
     Object.assign(
         document.createElement('section'),
         {
-            innerHTML:"this is main page"
+            innerHTML:`
+            <div class="container">
+                <div class="section-06-top d-col" id="section06Top"></div>
+                <div class="section-06-bottom" id="section06Bottom"></div>
+                <div class="cto-btn"> <button>Explore more</button></div>
+            </div>
+            `,
+            function:addEventListener('load',()=>{
+                  fetch('./content.json').then(res=>res.json()).then(data=>{
+                    const item = data.main.sectionSix;
+                    section06Top.innerHTML = `
+                      <span class="title">Read Blog</span>
+                      <span class="heading">${item.title}</span>
+                    `
+                    item.blog.forEach(elmnt=>{
+                        section06Bottom.innerHTML += `
+                            <div class="blog-container d-col">
+                             <img src=${elmnt.img}>
+                             <div class="content d-col">
+                                <span class="title">${elmnt.title}</span>
+                                <span class="date">${elmnt.date}</span>
+                             </div>
+                            </div>
+                        `
+                    })
+                  })
+                  
+            })
         } 
     )
 )
