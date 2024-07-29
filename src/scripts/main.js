@@ -11,13 +11,7 @@ main.append(
                 </div>
             </div>
             <div class="slider-container">
-                <div class="slider d-flex" id="slider">
-                    <div class="slider-content"></div>
-                    <div class="slider-content"></div>
-                    <div class="slider-content"></div>
-                    <div class="slider-content"></div>
-                    <div class="slider-content"></div>
-                </div>
+                <div class="slider d-flex" id="slider"></div>
                 <button class="left" id="left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none" viewBox="0 0 58 58">
                     <g filter="url(#a)">
@@ -72,6 +66,23 @@ main.append(
                     rightImage.innerHTML +=`
                     <img src=${item.img}>
                     `
+                    item.other.forEach(elmnt=>{
+                        slider.innerHTML += `
+                        <div class="slider-content">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <img src=${elmnt.img} alt="Avatar">
+                                    <div class="drop-trnsp"></div>
+                                    <p>${elmnt.title}</p>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h1>${elmnt.title}</h1> 
+                                    <p>${elmnt.para}</p>
+                                </div>
+                            </div>
+                        </div>
+                        `
+                    })
                     const element = document.getElementById('slider');
                     const sliderContent = document.querySelector('.slider-content')
                     const width = sliderContent.offsetWidth;
@@ -82,6 +93,7 @@ main.append(
                     right.addEventListener('click',()=>{
                         element.scrollBy(width,0)
                     })
+                    
                 })
             })
         } 
