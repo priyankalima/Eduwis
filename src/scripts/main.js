@@ -9,8 +9,7 @@ main.append(
                     <div class="left-content d-col" id="leftContent"></div>
                     <div class="right-image" id="rightImage"></div>
                 </div>
-            </div>
-            <div class="slider-container">
+                <div class="slider-container">
                 <div class="slider d-flex" id="slider"></div>
                 <button class="left" id="left">
                     <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="none" viewBox="0 0 58 58">
@@ -53,6 +52,7 @@ main.append(
                   </svg>
             </button>
             </div>
+            </div>
             `,
             function:addEventListener('load',()=>{
                 fetch('./content.json').then(res=>res.json()).then((data)=>{
@@ -76,8 +76,8 @@ main.append(
                                     <p>${elmnt.title}</p>
                                 </div>
                                 <div class="flip-card-back">
-                                    <h1>${elmnt.title}</h1> 
-                                    <p>${elmnt.para}</p>
+                                    <span class="title">${elmnt.title}</span> 
+                                    <span class="para">${elmnt.para}</span>
                                 </div>
                             </div>
                         </div>

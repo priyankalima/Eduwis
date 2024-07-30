@@ -85,10 +85,10 @@
                 /* background:green; */
                 overflow: auto;
                 scroll-behavior: smooth;
-                gap: 20px;
+                gap: 10px;
 
                 .slider-content {
-                    width: 300px;
+                    width: 250px;
                     height: 30vh;
                     background: #f1f1f1;
                     flex-shrink: 0;
@@ -108,7 +108,7 @@
                     text-align: center;
                     transition: transform 0.6s;
                     transform-style: preserve-3d;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
                   }
                   .slider-content:hover .flip-card-inner {
@@ -129,7 +129,7 @@
                     position: relative;
                     cursor: pointer;
                     img{
-                        border-radius: 10px;
+                        border-radius: 5px;
                         width:100%;
                         height:220px;
                         object-fit: cover;
@@ -140,7 +140,7 @@
                         background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(19, 19, 19, 0.8) 71.99%);
                         position: absolute;
                         top:0;
-                        border-radius: 10px;
+                        border-radius: 5px;
                         /* opacity: 20%; */
                     }
                     @media(max-width:600px){
@@ -166,39 +166,44 @@
                     border:1px solid #0239c7;
                     color: var(--dark-color);
                     transform: rotateY(180deg);
-                    border-radius: 10px;
+                    border-radius: 5px;
                     top:0;
-                    p{
-                        padding:0 10px;
-                        font-family: var(--font-family);
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 179%;
-                        letter-spacing: 0.02em;
-                        color: rgba(5, 3, 41, 0.8);
-                    }
-                    h1{
+                    display:flex;
+                    flex-direction: column;
+                    /* gap:5px; */
+                    .title{
                         font-family: var(--font-family);
                         font-weight: 600;
                         font-size: 14px;
                         color: var(--text-color);
-                        padding:0 10px;
+                        padding:10px;
+                        /* background-color: green; */
                     }
+                    .para{
+                        padding:0 10px;
+                        font-family: var(--font-family);
+                        font-weight: 400;
+                        font-size: 14px;
+                        /* line-height: 179%; */
+                        letter-spacing: 0.01em;
+                        color: rgba(5, 3, 41, 0.8);
+                    }
+                    
                   }
 
                 .slider-content:first-child {
-                    margin-left: 8pc;
+                    margin-left: 0.2pc;
 
                     @media(max-width:600px) {
-                        margin-left: 20px;
+                        /* margin-left: 1px; */
                     }
                 }
 
                 .slider-content:last-child {
-                    margin-right: 8pc;
+                    margin-right: 0.2pc;
 
                     @media(max-width:600px) {
-                        margin-right: 20px;
+                        /* margin-right: 20px; */
                     }
                 }
             }
@@ -217,7 +222,7 @@
             }
 
             .left {
-                left: 5.8pc;
+                left: -2pc;
 
                 @media(max-width:600px) {
                     display: none
@@ -225,7 +230,7 @@
             }
 
             .right {
-                right: 5.8pc;
+                right: -2pc;
 
                 @media(max-width:600px) {
                     display: none;
