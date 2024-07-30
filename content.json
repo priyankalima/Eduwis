@@ -85,17 +85,42 @@
                         {
                             "icon": "./src/assets/module-icons/icon-2.svg",
                             "name": "Lesson Plan",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                            "para": "Assign, track, and manage homework assignments, promoting a systematic approach to learning."
                         },
                         {
                             "icon": "./src/assets/module-icons/icon-3.svg",
                             "name": "Homework",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                            "para": "Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators."
                         },
                         {
                             "icon": "./src/assets/module-icons/icon-4.svg",
                             "name": "Attendance",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
+                            "para": "Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-5.svg",
+                            "name": "Library",
+                            "para": "Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-6.svg",
+                            "name": "Certficate",
+                            "para": "Streamline certificate generation, ensuring accurate and timely issuance for various student achievements."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-7.svg",
+                            "name": "Report Card",
+                            "para": "Automate the grading process and generate comprehensive report cards, facilitating transparent academic assessment."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-8.svg",
+                            "name": "Online Learning",
+                            "para": "Foster remote learning via online courses and educational resources."
+                        },
+                        {
+                            "icon": "./src/assets/module-icons/icon-9.svg",
+                            "name": "Timetable",
+                            "para": "Generate and manage school timetables efficiently, optimizing class schedules for effective teaching."
                         }
                     ]
                 },
@@ -103,31 +128,7 @@
                     "id":"tab2",
                     "name": "Administration",
                     "list": [
-                        {
-                            "icon": "./src/assets/module-icons/icon-5.svg",
-                            "name": "Library",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
-                        },
-                        {
-                            "icon": "./src/assets/module-icons/icon-6.svg",
-                            "name": "Certficate",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
-                        },
-                        {
-                            "icon": "./src/assets/module-icons/icon-7.svg",
-                            "name": "Report Card",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
-                        },
-                        {
-                            "icon": "./src/assets/module-icons/icon-8.svg",
-                            "name": "Online Learning",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
-                        },
-                        {
-                            "icon": "./src/assets/module-icons/icon-9.svg",
-                            "name": "Timetable",
-                            "para": "Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management."
-                        },
+                        
                         {
                             "icon": "./src/assets/module-icons/icon-10.svg",
                             "name": "Multi-Branch Report",
