@@ -127,6 +127,7 @@
                     color: black;
                     border-radius: 10px;
                     position: relative;
+                    cursor: pointer;
                     img{
                         border-radius: 10px;
                         width:100%;

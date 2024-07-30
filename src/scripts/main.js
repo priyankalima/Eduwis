@@ -85,7 +85,7 @@ main.append(
                     })
                     const element = document.getElementById('slider');
                     const sliderContent = document.querySelector('.slider-content')
-                    const width = sliderContent.offsetWidth;
+                    const width = element.scrollWidth-sliderContent.offsetWidth;
                     
                     left.addEventListener('click',()=>{
                         element.scrollBy(-width,0)
